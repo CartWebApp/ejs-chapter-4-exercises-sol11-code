@@ -1,5 +1,8 @@
 function reverseArray(arr) {
-  // Add code.
+  let list = [];
+  for (let i = 1; i <= 1; i++){
+    
+  }
 }
 
 function reverseArrayInPlace(arr) {

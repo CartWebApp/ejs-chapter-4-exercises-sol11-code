@@ -1,19 +1,21 @@
 function range(start, end, step = 1) {
   let list = [];
-  for (let i = 1; i <= end; i++) {
+  if (step > 0){
+    for (let i = start; i <= end; i++)
     list.push(i);
-  }
-  for (let i = 1; i >= end; i++) {
+  } else {
+    for (let i = start; i >= end; i += step)
     list.push(i);
   }
   return list;
 }
 
 function sum(numbers) {
-  let list = [];
-  for (let i = 1; i <= numbers; i++){
-    list.push(i);
+  let total = 0;
+  for (let value of numbers) {
+    total += value;
   }
+  return total;
 }
 
 
